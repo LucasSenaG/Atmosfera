@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atmosfera de Amor</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo Atmosfera de Amor" id="logo">
+        <p><a href="#inicio">Início</a></p>
+        <p><a href="#sobre">2023</a></p>
+        <p><a href="#inscricao">Inscrição</a></p>
+        <p>Edições Anteriores</p>
+    </header>
+
+    <div id="inicio">
+        <div class="pagina-inicial">
+            <div class="seta-navegacao">
+                <img src="img/seta-esquerda.png" alt="seta para esquera">
+            </div>
+            <div class="carrossel">
+                <div class="informacoes">
+                    <h3 id="nome">José Rodrigues</h3>
+                    <img src="img/seta.png" id="seta" alt="seta">
+                    <div class="frase">
+                        <p>"Quem planta pouco, colhe pouco</p>
+                        <p>quem planta muito <u>colhe muito</u>."</p>
+                    </div>
+                    <p id="igreja-local">Igreja Batista Getsêmani - Missão Barreiro </p>
+                    <h5><u>Preletor</u></h5>
+                </div>
+                <div class="img-carrossel">
+                    <img src="img/preletor1.jpg" alt="Preletor 1">
+                    <div class="degrade-foto"></div>
+                </div>
+            </div>
+            <div class="seta-navegacao">
+                <img src="img/seta-direita.png" alt="seta">
+            </div>
+        </div>
+        <div class="botoes">
+            <a href="#inscricao"><button class="botao">Inscrição 2023</button></a>
+        </div>
+    </div>
+
+    <div id="sobre">
+        <div class="img-sobre">
+            <img src="img/Luisa.png" alt="Imagem Atmosfera">
+        </div>
+
+        <div class="texto-sobre">
+            <p>Se você está procurando um evento cheio de energia e inspiração, você encontrou! O Atmosfera de Amor
+                organizado pelos jovens de nossa igreja! Este ano, estamos animados para realizar o evento em um
+                ambiente diferente e emocionante: um acampamento!</p>
+
+            <p>Prepare-se para ser impactado pela poderosa palavra de Deus, ministrada por dois preletores em cada um
+                dos dois tempos do evento. Esses pregadores incríveis vão compartilhar suas experiências e sabedoria,
+                trazendo novas perspectivas e desafios à sua vida espiritual.</p>
+
+            <p>Além disso, você terá a oportunidade de experimentar duas equipes de louvor diferentes que irão liderar a
+                adoração em cada um dos tempos. Serão noites inesquecíveis de música poderosa e profunda conexão com
+                Deus.</p>
+
+            <p>E o melhor de tudo, você poderá desfrutar da natureza deslumbrante que o acampamento oferece. Longe da
+                agitação da cidade, você poderá relaxar e se concentrar em se conectar com Deus e com outros jovens em
+                um ambiente tranquilo e pacífico.</p>
+
+            <p>Não perca esta oportunidade incrível de crescer em sua jornada espiritual e de construir relacionamentos
+                significativos com outras pessoas. Junte-se a nós no acampamento e experimente uma noite inesquecível
+                que pode mudar sua vida para sempre!</p>
+        </div>
+    </div>
+
+    <div id="inscricao">
+        <div id="data-congresso">
+            <h2>7 a 9 de Setembro de 2023</h2>
+            <h4>Rua Olinto Meireles, 1544 - Pedro Leopoldo</h4>
+        </div>
+        <div class="conteudo-formulario">
+            <div class="img-formulario">
+                <img src="img/logo.png" alt="Logo Atm">
+            </div>
+            <form id="formCadastro" method="post" action="conexao.php">
+                <p>Nome Completo: </p>
+                <input type="text" name="nomeCadastro" id="nomeCadastro" required>
+
+                <p>Data de Nascimento</p>
+                <input type="date" name="dataNascimento" id="dataNascimento" required>
+
+                <p>Telefone de Contato: </p>
+                <input type="tel" name="numeroTelefone" id="numeroTelefone" required>
+
+                <p>e-mail: </p>
+                <input type="email" name="emailAcampamente" id="emailAcampamente">
+
+                <p>Endereço Completo: </p>
+                <input type="text" name="enderecoAcampamente" id="enderecoAcampamente" required>
+
+                <p>Tamanho de camisa: </p>
+                <select name="tamanhoCamisa" id="tamanhoCamisa" require>
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                    <option value="GG">GG</option>
+                    <option value="BLP">Baby Look (P)</option>
+                    <option value="BGM">Baby Look (M)</option>
+                    <option value="BLG">Baby Look (G)</option>
+                    <option value="BLGG">Baby Look (GG)</option>
+                </select>
+
+                <p>Observações: </p>
+                <textarea name="observacoes" id="observacoes" cols="30" rows="5"
+                    placeholder="Informe restrições médicas, alimentares. Qualquer tipo de alergia, ou condições médicas pré-existentes."></textarea>
+                <button type="submit" class="botao">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

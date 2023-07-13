@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Noto+Sans:wght@100;400;700&family=Source+Sans+Pro:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Bruno Ace SC';
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #252526;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #F0BC0A;
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 13vh;
+    background-color: #1E1E1E;
+    align-items: center;
+    justify-content: center;
+}
+
+header #logo {
+    width: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50vw;
+    margin-left: 1vw;
+    margin-top: -5px;
+}
+
+header p {
+    margin: 0 10px;
+    cursor: pointer;
+    padding-bottom: 3px;
+}
+
+header p:hover {
+    color: #ccc;
+    border-bottom: 2px solid #ccc;
+}
+
+#inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagina-inicial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #252526;
+    width: 100vw;
+    height: 70vh;
+}
+
+.pagina-inicial .carrossel {
+    display: flex;
+    width: 60vw;
+    height: 50vh;
+    -webkit-box-shadow: 40px 24px 42px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 40px 24px 42px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 40px 24px 42px -3px rgba(0, 0, 0, 0.75);
+}
+
+.pagina-inicial .seta-navegacao {
+    display: flex;
+    height: 100%;
+    width: 80px;
+    align-items: center;
+    justify-content: center;
+    background: none;
+}
+
+.pagina-inicial .seta-navegacao img {
+    display: flex;
+    width: 35px;
+    cursor: pointer;
+}
+
+.pagina-inicial .carrossel .informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 65%;
+    height: 100%;
+    z-index: 1;
+}
+
+.pagina-inicial .carrossel .informacoes h3 {
+    border-left: #F0BC0A 2px solid;
+    padding-left: 15px;
+}
+
+.pagina-inicial .carrossel .informacoes #seta {
+    position: absolute;
+    display: flex;
+    opacity: 0.5;
+    width: 8vw;
+    top: 35vh;
+    z-index: -1;
+}
+
+.pagina-inicial .carrossel .informacoes .frase p {
+    font-size: x-large;
+    text-shadow: 1px 0px 11px rgba(0, 0, 0, 0.5);
+}
+
+.pagina-inicial .carrossel .informacoes #igreja-local {
+    font-size: 10px;
+}
+
+u {
+    text-decoration-color: #F0BC0A;
+}
+
+.pagina-inicial .carrossel .informacoes h5 {
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.pagina-inicial .carrossel .img-carrossel {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pagina-inicial .carrossel .img-carrossel .degrade-foto {
+    position: absolute;
+    width: 400px;
+    height: 50vh;
+    background-image: linear-gradient(to right, #252526 40%, rgba(0, 0, 0, 0.01));
+    margin-right: 8vw;
+}
+
+.botoes {
+    display: flex;
+    height: 17vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #252526;
+}
+
+.botao {
+    padding: 15px;
+    background-image: linear-gradient(to right, #F0BC0A, #b48b04);
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#sobre {
+    display: flex;
+    background-color: #1E1E1E;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.img-sobre {
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    object-fit: contain;
+}
+
+.img-sobre img {
+    height: 100%;
+}
+
+.texto-sobre {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-sobre p {
+    padding: 5px 15px;
+    text-align: justify;
+    background-color: #F0BC0A;
+    color: #000;
+}
+
+#inscricao {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #252526;
+    background-image: url(../img/backgrond-formulario.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#data-congresso {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #F0BC0A;
+}
+
+#data-congresso h2 {
+    color: #F0BC0A;
+    text-transform: uppercase;
+}
+
+.conteudo-formulario {
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+}
+
+.conteudo-formulario .img-formulario {
+    height: 100%;
+    width: 30%;
+}
+
+.img-formulario img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    z-index: -5;
+}
+
+.conteudo-formulario form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 60%;
+}
+
+form p {
+    text-shadow: 1px 0px 11px rgba(0, 0, 0, 0.5);
+    text-align: justify;
+}
+
+form input,
+option,
+textarea,
+select {
+    width: 20vw;
+    color: #000;
+}
+
+@media (min-width: 100px) {
+    @media (max-width: 413px) {
+
+        .pagina-entrada {
+            width: 100%;
+        }
+
+        .pagina-entrada #background {
+            overflow: visible;
+            right: 150px;
+        }
+
+        .pagina-entrada .coluna-info {
+            width: 100vw;
+            height: 100vh;
+            justify-content: space-between;
+        }
+
+        .pagina-entrada .coluna-info #logo-atm {
+            width: 80vw;
+            height: 80vh;
+            margin-top: -150px;
+        }
+
+        .pagina-entrada .coluna-info button {
+            margin-bottom: 50px;
+            padding: 20px 100px;
+        }
+
+        header #logo {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 10vh;
+            width: 50vw;
+            object-fit: contain;
+            margin: 0;
+        }
+
+        header p {
+            display: none;
+        }
+
+        #inicio {
+            display: none;
+            border: 2px solid red;
+            overflow: hidden;
+        }
+
+        .pagina-inicial {
+            border: 2px solid green;
+            width: 100vw;
+            height: 30vh;
+        }
+
+        .seta-navegacao {
+            display: none;
+        }
+
+        .pagina-inicial .carrossel {
+            display: none;
+            border: 2px solid blue;
+            width: 70vw;
+            height: 3vh;
+        }
+
+        .pagina-inicial .carrossel .informacoes {
+            display: none;
+            border: 2px solid yellow;
+            width: 70vw;
+            height: 30vh;
+        }
+
+        .img-carrossel img {
+            width: 5vw;
+            height: 5vh;
+            object-fit: contain;
+        }
+
+        .botoes {
+            display: none;
+        }
+
+        #sobre {
+            height: 100vw;
+            width: 100vw;
+            background-image: url("../img/Luisa.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        #sobre .img-sobre {
+            display: none;
+        }
+
+        #sobre .texto-sobre {
+            width: 100%;
+            height: 100%;
+            overflow: scroll;
+        }
+
+        #sobre .texto-sobre p {
+            font-size: x-small;
+            opacity: 0.75;
+            padding: 10px 20px;
+        }
+
+        #sobre .texto-sobre p:first-child {
+            padding-top: 8vh;
+        }
+
+        #data-congresso h2 {
+            font-size: large;
+            margin-left: 15px;
+        }
+
+        #data-congresso h4 {
+            margin-left: 25px;
+            font-size: small;
+        }
+
+        .conteudo-formulario {
+            justify-content: center;
+        }
+        
+        .conteudo-formulario .img-formulario {
+            display: none;
+        }
+
+        .conteudo-formulario form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 55vw;
+        }
+
+        .conteudo-formulario form p {
+            text-align: start;
+            width: 55vw;
+        }
+
+        form input, select, textarea {
+            width: 50vw;
+            margin-bottom: 15px;
+        }
+    }
+}

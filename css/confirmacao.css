@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto';
+    color: rgb(53, 53, 53);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fundo {
+    width: 60vw;
+    height: 60vh;
+    background-color: #F0BC0A;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.fundo > h1 {
+    font-size: medium;
+    margin-left: 1vw;
+    margin-top: 2vh;
+}
+
+.fundo > .icon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon > #imgicon {
+    display: flex;
+    width: 15vw;
+}
+
+.fundo > h3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: 700;
+}
+
+.txtconfirmacao {
+    width: 50vw;
+    height: 15vh;
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: -12vh;
+    padding: 20px;
+}
+
+.txtconfirmacao > h5 {
+    font-size: 20px
+}
+
+.rodape {
+    background-color: #F0BC0A;
+    width: 40vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+}
+
+@media (min-width: 100px) {
+    @media (max-width: 413px) {
+
+        .fundo {
+            width: 100%;
+        }
+        
+        .fundo > h1 {
+            margin-left: 3vw;
+        }
+
+        .icon > #imgicon {
+            width: 50vw;
+        }
+
+        .txtconfirmacao {
+            width: 70vw;
+            margin-top: -15vh;
+        }
+
+        .rodape {
+            width: 70vw;
+            margin-top: 8vh;
+        }
+    }}
